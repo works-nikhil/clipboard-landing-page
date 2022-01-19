@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+:root{
+--strong-cyan: hsl(171, 66%, 44%);
+--light-blue: hsl(233, 100%, 69%);
+--dark-grayish-blue: hsl(210, 10%, 33%);
+--grayish-blue: hsl(201, 11%, 66%);
+--grayish-light: hsl(204, 20%, 95%);
+
+}
+
+*{
+    box-sizing: border-box;
+}
+
+p{
+    color: hsl(212, 9%, 58%);
+}
+
+body{
+    font-family: 'Bai Jamjuree', sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+
+header{
+    background-image: url(./images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px 0;
+}
+header .icon-img{
+    padding-bottom:20px ;
+}
+img {
+    max-width: 100%;
+}
+
+.container{
+    width: 1200px;
+    max-width: 100%;
+    margin: 40px auto;
+}
+
+.container-small {
+    width: 700px;
+}
+
+section {
+    padding: 30px auto;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.flex > * {
+    flex: 1;
+    padding: 10px;
+}
+
+.btn {
+ padding: 15px 35px;
+ border: none;
+ color: #fff;
+ border-radius: 50px;
+ font-size: 16px;
+ font-family: 'Bai Jamjuree', sans-serif;
+ font-weight: 600;
+ margin: 15px 8px;
+}
+
+.even {
+    padding: 20px 0;
+}
+
+.btn-primary{
+    background-color: var(--strong-cyan);
+    box-shadow: 0 4px hsl(171, 65%, 39%);
+}
+
+.btn-secondary{
+    background-color: var(--light-blue);
+    box-shadow: 0 4px hsl(233, 69%, 61%);
+
+}
+
+
+.btn-primary:hover{
+    background-color: hsl(171, 66%, 55%);
+    cursor: pointer;
+    box-shadow: hsl(171, 66%, 55%) 0px 10px 20px; 
+}
+
+
+.btn-secondary:hover{
+    
+        cursor: pointer;
+        background-color: #8795ff;
+        box-shadow: #5063da 0px 10px 20px; 
+}
+
+
+footer {
+ background-color: var(--grayish-light);
+ 
+}
+
+footer .container {
+    margin-bottom: 0;
+}
+
+footer ul {
+    display: flex;
+    padding: 0;
+    list-style-type: none;
+}
+
+footer .links {
+    flex: 3;
+    flex-wrap: wrap;
+}
+
+footer img {
+    width: 50px;
+}
+
+
+
+footer ul li a {
+    text-decoration: none;
+    color: var(--dark-grayish-blue);
+}
+
+footer .social li {
+    width: 15px;
+    margin: 10px;
+    cursor: pointer;
+
+}
+footer .small-space {
+    justify-content: space-between;
+    color:hsl(171, 65%, 39%);
+}
+
+.footer-even {
+    padding: 20px 0;
+    display: block;
+    text-align: left;
+    
+}
+
+.footer-even li {
+    padding: 10px 0;
+    
+}
+.footer-even li a:hover{
+    color: var(--strong-cyan);
+    
+}
+
+footer .social li img:hover{
+    cursor: pointer;
+    }
+
+.visible {
+    visibility: hidden;
+}
+
+
+
+@media(max-width: 768px) {
+        .flex {
+            display: block;
+            
+        }
+
+        h2 {
+            font-size: 2.5em;
+        }
+
+        h1 {
+            font-size: 3em;
+            padding: 0 2px;
+        }
+
+        p {
+            font-size: 20px;
+            padding: 0 2px;
+            text-align: center;
+        }
+
+        .btn {
+            display: block;
+            align-content: center;
+            justify-content: center;
+            margin: inherit;
+            padding: 20px 106px;
+            border: none;
+            color: #fff;
+            border-radius: 50px;
+            font-size: 20px;
+            font-weight: 600;
+            
+        }
+
+        .visible {
+            display: none;
+        }
+        
+
+        .flex > * {
+            flex: 1;
+            padding: 30px;
+        }
+
+        .footer-even{
+            text-align: center;
+            font-size: 24px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .footer-last li {
+            text-align: center;
+        }
+
+        footer .social li {
+            width: 100%;
+            margin: 10px;
+            justify-content: space-between;
+            padding: 20px 0;
+        
+        }
+
+        footer img {
+            width: 70px;
+    
+        }
+
+        .social li img {
+            width: 30px;
+        }
+
+        footer ul {
+            display: flex;
+            padding: 0 100px;
+            list-style-type: none;
+        }
+
+        
+
+        footer .social {
+            
+                padding: 0 100px;
+                margin: 0;
+            }
+
+        .space {
+            padding: 0 30px;
+        }
+               
+
+}
+        
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
